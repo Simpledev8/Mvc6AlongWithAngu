@@ -29,7 +29,7 @@ namespace AnguCore1._0
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseStaticFiles();  
+            app.UseStaticFiles();  
             app.UseMvc(routes => {
                 routes.MapRoute(name: "default", template: "{controller=Home}/{action=Index}/{id?}");
             });

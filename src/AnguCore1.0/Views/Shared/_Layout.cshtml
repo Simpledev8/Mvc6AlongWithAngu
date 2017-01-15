@@ -1,9 +1,9 @@
-﻿<!DOCTYPE html>
+﻿@*<!DOCTYPE html>
 <html>
 
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Angu</title>
+    <title>@ViewBag.Title</title>
     <script src="~/lib-npm/es6-shim/es6-shim.js"></script>
     <script src="~/lib-npm/angular2/angular2-polyfills.js"></script>
     <script src="~/lib-npm/systemjs/system.src.js"></script>
@@ -12,25 +12,10 @@
 </head>
 
 <body>
-    hrh
-    <core-app>
-        <div>
-            <p>Please wait ...</p>
-        </div>
-    </core-app>
-
-    <script>
-
-    System.config({
-        packages: {
-            'app': {
-                defaultExtension: 'js'
-            }
-        },
-    });
-    System.import('app/main').then(null, console.error.bind(console));
-    </script>
-
+    hkjhk
+    <div> @RenderBody() </div>
+    
+     @RenderSection("scripts", required: false)
 </body>
 
-</html> 
+</html>*@ 
